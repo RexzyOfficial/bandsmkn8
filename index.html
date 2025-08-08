@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstrakulikuler Band Sekolah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-pattern {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6cba2f3b-b684-4137-9223-f8d36c0fb67c.png') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .instrument-card {
+            transition: all 0.3s ease;
+        }
+        
+        .instrument-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Hero Section -->
+    <header class="hero-pattern min-h-screen flex flex-col justify-center items-center text-white py-20 px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-bounce">Ekstrakulikuler Band</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-2xl">Temukan bakat musikmu, kembangkan kreativitas, dan tampil percaya diri bersama kami!</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#tentang" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+                Pelajari Lebih Lanjut
+            </a>
+            <a href="#daftar" class="whatsapp-btn px-4 py-2 rounded-full font-semibold text-white flex items-center justify-center">
+                <i class="fab fa-whatsapp mr-2 text-xl"></i> Daftar Sekarang
+            </a>
+        </div>
+    </header>
+
+    <!-- Tentang Ekstrakulikuler -->
+    <section id="tentang" class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Tentang Kami</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58f2c7d2-001b-4b13-a460-6b1530a8836d.png" alt="Sekelompok siswa sedang berlatih band di ruang musik sekolah dengan berbagai instrumen" class="rounded-lg shadow-xl w-full">
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4">Ekstrakulikuler Pengembangan Bakat Musik</h3>
+                <p class="text-gray-600 mb-4">Ekstrakulikuler Band merupakan wadah bagi siswa-siswi yang memiliki minat dan bakat di bidang musik untuk mengembangkan potensi mereka secara profesional dan menyenangkan.</p>
+                <p class="text-gray-600 mb-6">Kami menyediakan pelatihan berbagai instrumen musik modern seperti gitar, bass, drum, dan vokal, dibimbing oleh mentor yang berpengalaman.</p>
+                
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-600">Latihan rutin setiap Sabtu pukul 09.00-13.00</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-600">Fasilitas instrumen tersedia</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-600">Kesempatan tampil di berbagai acara sekolah</p>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <p class="text-gray-600">Bimbingan dari mentor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrumen yang Diajarkan -->
+    <section class="py-20 bg-blue-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Instrumen yang Kami Ajarkan</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="instrument-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-guitar text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Gitar</h3>
+                    <p class="text-gray-600 text-sm mt-2">Belajar teknik dasar hingga lanjutan bermain gitar</p>
+                </div>
+                
+                <div class="instrument-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-drum text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Drum</h3>
+                    <p class="text-gray-600 text-sm mt-2">Penguasaan ritme dan teknik permainan drum</p>
+                </div>
+                
+                <div class="instrument-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-music text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Bass</h3>
+                    <p class="text-gray-600 text-sm mt-2">Memahami peran dan teknik bermain bass</p>
+                </div>
+                
+                <div class="instrument-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microphone text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-lg">Vokal</h3>
+                    <p class="text-gray-600 text-sm mt-2">Teknik pernapasan dan pengembangan vokal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan -->
+    <section class="py-20 px-4 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-4">Galeri Kegiatan Kami</h2>
+            <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8f362e3e-68c2-4931-9a98-869d05f43c2c.png" alt="Siswa sedang berlatih bersama dengan berbagai instrumen musik di ruang latihan" class="w-full h-64 object-cover">
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8e45ef0c-7ff5-4c7b-b9a1-2f06557f7119.png" alt="Penampilan band sekolah di acara pentas senian tahunan dengan panggung yang penuh lampu" class="w-full h-64 object-cover">
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e6ff9673-06a6-4751-800b-7345809d1052.png" alt="Sesi latihan vokal dengan mentor yang sedang membimbing siswa" class="w-full h-64 object-cover">
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/380c22f5-207d-4184-b569-548570004a6a.png" alt="Workshop musik dengan pembicara tamu dari musisi profesional" class="w-full h-64 object-cover">
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f2efd150-b235-42e7-98f6-d00b5b214e33.png" alt="Momen kebersamaan anggota band setelah selesai latihan" class="w-full h-64 object-cover">
+            </div>
+            <div class="gallery-item">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d02bd59c-b940-4393-ab8e-fa02d293cb35.png" alt="Penampilan special di acara perpisahan sekolah dengan kostum seragam" class="w-full h-64 object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendaftaran -->
+    <section id="daftar" class="py-20 bg-blue-600 text-white px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Bergabunglah Bersama Kami</h2>
+                <p class="text-blue-100 max-w-2xl mx-auto">Hubungi kami via WhatsApp untuk informasi lebih lanjut.</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg max-w-2xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Informasi Pendaftaran</h3>
+                        <p class="text-gray-600 mb-4">Ekstrakulikuler Band terbuka untuk semua siswa dari berbagai tingkatan kelas.</p>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <i class="fas fa-calendar-alt text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-gray-800 font-medium">Waktu Pendaftaran</p>
+                                    <p class="text-gray-600 text-sm">Buka sepanjang tahun ajaran</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-gray-800 font-medium">Jadwal Latihan</p>
+                                    <p class="text-gray-600 text-sm">Setiap Sabtu, 09.00 - 13.00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 mt-1 mr-3"></i>
+                                <div>
+                                    <p class="text-gray-800 font-medium">Tempat</p>
+                                    <p class="text-gray-600 text-sm">SMK Negeri 8 Kota Tangerang</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/628888046586?text=Halo,%20saya%20ingin%20mendaftar%20ekstrakulikuler%20band" 
+                           class="whatsapp-btn inline-flex items-center justify-center px-4 py-2 rounded-full font-semibold mt-6 w-full text-white">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i> Hubungi via WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Ekstrakulikuler Band</h3>
+                    <p class="text-gray-400">Mengembangkan bakat musik siswa melalui pelatihan profesional dan pengalaman panggung.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Kontak</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span>SMK Negeri 8 Kota Tangerang</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3 text-blue-400"></i>
+                            <span>0888-8046-586</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Sosial Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2025 Ekstrakulikuler Band SMK Negeri 8 Kota Tangerang.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
